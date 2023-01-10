@@ -1,0 +1,33 @@
+.card-cntr {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 100px auto;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  height: 20vh;
+  border-radius: 8px;
+}
+
+.icon img {
+  height: 50px;
+  margin-right: 25px;
+}
+
+.card-content-item h1 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.card-content-item p {
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -1,0 +1,87 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 80vh;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.item img {
+  width: 100%;
+}
+
+.content-product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.count button {
+  padding: 3px 10px;
+  background: #fff;
+  color: #2a9b13;
+  border: 1px solid #2a9b13;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.count button:active {
+  background: #2a9b13;
+  color: #fff;
+  border: 1px solid #2a9b13;
+}
+
+.Add {
+  padding: 5px;
+  width: 20%;
+  background: #2a9b13;
+  color: #fff;
+  border: 1px solid #2a9b13;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.content-product {
+  position: relative;
+  z-index: 9999;
+}
+
+.content-product::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -3%;
+  width: 150px;
+  height: 100px;
+  background: #fff;
+  border-radius: 0 200px 200px 0;
+  transform: rotate(-90deg);
+}
+.content-product::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: -3%;
+  width: 150px;
+  height: 100px;
+  background: #2a9b13;
+  transform: rotate(-90deg);
+}
+
+.content-product h1 {
+  z-index: 9999;
+}
+
+.content-product p {
+  width: 80%;
+  line-height: 1.9rem;
+  margin: 10px 0;
+  z-index: 9999;
+}
